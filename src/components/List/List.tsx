@@ -1,10 +1,18 @@
 import './List.scss';
 
-function List() {
+type ListProps = {
+  title: string;
+  items: string[];
+};
+
+function List({ title, items }: ListProps) {
   return (
     <>
+      <h2>{title}</h2>
       <ul>
-        <li></li>
+        {items.map((item) => (
+          <li value={item}>{item}</li>
+        ))}
       </ul>
     </>
   );
