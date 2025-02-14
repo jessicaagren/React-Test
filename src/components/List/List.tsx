@@ -3,17 +3,20 @@ import './List.scss';
 type ListProps = {
   title: string;
   items: string[];
+  isNumbered: boolean;
 };
 
-function List({ title, items }: ListProps) {
+function List({ title, items, isNumbered }: ListProps) {
+  const ListTag = isNumbered ? 'ol' : 'ul';
+
   return (
     <>
       <h2>{title}</h2>
-      <ul>
-        {items.map((item) => (
-          <li value={item}>{item}</li>
+      <ListTag>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
         ))}
-      </ul>
+      </ListTag>
     </>
   );
 }
