@@ -23,6 +23,7 @@ function Main() {
         <Button title='Knappis igen' />
         <CuteCatImageDiv />
         <List title='Cars' items={cars} />
+        <List title='Cookies' items={cookies} />
       </main>
     </>
   );
