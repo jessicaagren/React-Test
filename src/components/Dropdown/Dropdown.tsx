@@ -6,15 +6,6 @@ type DropdownProps = {
   items: string[];
 };
 
-export const cars = ['Volvo', 'Saab', 'Honda', 'Hyundai'];
-
-export const cookies = [
-  'Chocolate Chip',
-  'White Chocolate Macadadamia',
-  'Sugar Cookie',
-  'Gingerbread',
-];
-
 function Dropdown({ label, id, items }: DropdownProps) {
   return (
     <>

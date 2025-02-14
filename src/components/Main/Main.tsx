@@ -1,9 +1,17 @@
 import Button from '../Button/Button';
 import CuteCatImageDiv from '../CuteCatImageDiv/CuteCatImageDiv';
-import Dropdown, { cars, cookies } from '../Dropdown/Dropdown';
+import Dropdown from '../Dropdown/Dropdown';
 import './Main.scss';
 
 function Main() {
+  const cars = ['Volvo', 'Saab', 'Honda', 'Hyundai'];
+
+  const cookies = [
+    'Chocolate Chip',
+    'White Chocolate Macadadamia',
+    'Sugar Cookie',
+    'Gingerbread',
+  ];
   return (
     <>
       <main>
