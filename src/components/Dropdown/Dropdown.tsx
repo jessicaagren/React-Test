@@ -1,19 +1,31 @@
 import './Dropdown.scss';
 
 type DropdownProps = {
-  title: string;
+  label: string;
+  id: string;
+  items: string[];
 };
 
-function Dropdown({ title }: DropdownProps) {
+export const cars = ['Volvo', 'Saab', 'Honda', 'Hyundai'];
+
+export const cookies = [
+  'Chocolate Chip',
+  'White Chocolate Macadadamia',
+  'Sugar Cookie',
+  'Gingerbread',
+];
+
+function Dropdown({ label, id, items }: DropdownProps) {
   return (
     <>
-      <label htmlFor={title}>Choose {title}:</label>
-      <select name={title} id={title}>
-        <option value='volvo'>Volvo</option>
-        <option value='saab'>Saab</option>
-        <option value='mercedes'>Mercedes</option>
-        <option value='audi'>Audi</option>
-      </select>{' '}
+      <label htmlFor={label}>Choose {label}:</label>
+      <select name={label} id={id}>
+        {items.map((item) => (
+          <option key={item} value={item}>
+            {item}
+          </option>
+        ))}
+      </select>
     </>
   );
 }
