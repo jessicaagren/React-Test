@@ -3,7 +3,7 @@ import './Grid.scss';
 function Grid() {
   return (
     <>
-      <div className='grid'></div>
+      <div className='Grid'></div>
     </>
   );
 }
