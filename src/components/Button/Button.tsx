@@ -2,16 +2,21 @@ import './Button.scss';
 
 type ButtonProps = {
   title: string;
+  id?: string;
+  hasIcon: boolean;
   clickFunction: () => void;
 };
 
-function Button({ title, clickFunction }: ButtonProps) {
+function Button({ title, id, hasIcon, clickFunction }: ButtonProps) {
   const handleClick = () => {
     clickFunction();
   };
   return (
     <>
-      <button onClick={handleClick}>{title}</button>
+      <button id={id} onClick={handleClick}>
+        {hasIcon && '😻'}
+        {title}
+      </button>
     </>
   );
 }
