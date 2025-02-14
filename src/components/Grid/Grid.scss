@@ -1,0 +1,4 @@
+.grid {
+  display: grid;
+  grid-template-areas: repeat(1fr, 5) repeat (1fr, 5);
+}
