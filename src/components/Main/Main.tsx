@@ -1,6 +1,7 @@
 import Button from '../Button/Button';
 import CuteCatImageDiv from '../CuteCatImageDiv/CuteCatImageDiv';
 import Dropdown from '../Dropdown/Dropdown';
+import List from '../List/List';
 import './Main.scss';
 
 function Main() {
@@ -12,6 +13,7 @@ function Main() {
     'Sugar Cookie',
     'Gingerbread',
   ];
+
   return (
     <>
       <main>
@@ -20,6 +22,7 @@ function Main() {
         <Button title='Knappis' />
         <Button title='Knappis igen' />
         <CuteCatImageDiv />
+        <List title='Cars' items={cars} />
       </main>
     </>
   );
