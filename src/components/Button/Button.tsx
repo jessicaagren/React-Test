@@ -2,11 +2,12 @@ import './Button.scss';
 
 type ButtonProps = {
   title: string;
+  clickFunction: () => void;
 };
 
-function Button({ title }: ButtonProps) {
+function Button({ title, clickFunction }: ButtonProps) {
   const handleClick = () => {
-    console.log('You clicked me!');
+    clickFunction();
   };
   return (
     <>

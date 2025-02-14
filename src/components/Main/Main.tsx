@@ -19,11 +19,11 @@ function Main() {
       <main>
         <Dropdown label='cars' id='cars' items={cars} />
         <Dropdown label='cookies' id='cookies' items={cookies} />
-        <Button title='Knappis' />
-        <Button title='Knappis igen' />
+        <Button title='Knappis' clickFunction={() => console.log('Hej')} />
+        <Button title='Knappis igen' clickFunction={() => console.log('Bu')} />
         <CuteCatImageDiv />
-        <List title='Cars' items={cars} />
-        <List title='Cookies' items={cookies} />
+        <List title='Cars' items={cars} isNumbered={false} />
+        <List title='Cookies' items={cookies} isNumbered={true} />
       </main>
     </>
   );
