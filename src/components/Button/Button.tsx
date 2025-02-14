@@ -5,9 +5,12 @@ type ButtonProps = {
 };
 
 function Button({ title }: ButtonProps) {
+  const handleClick = () => {
+    console.log('You clicked me!');
+  };
   return (
     <>
-      <button>{title}</button>
+      <button onClick={handleClick}>{title}</button>
     </>
   );
 }
