@@ -1,6 +1,8 @@
 import Button from '../Button/Button';
+import Checkbox from '../Checkbox/CheckBox';
 import CuteCatImageDiv from '../CuteCatImageDiv/CuteCatImageDiv';
 import Dropdown from '../Dropdown/Dropdown';
+import InputField from '../InputField/InputField';
 import List from '../List/List';
 import './Main.scss';
 
@@ -38,6 +40,8 @@ function Main() {
         <CuteCatImageDiv />
         <List title='Cars' items={cars} isNumbered={false} />
         <List title='Cookies' items={cookies} isNumbered={true} />
+        <InputField />
+        <Checkbox />
       </main>
     </>
   );
